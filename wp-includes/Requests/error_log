@@ -1,0 +1,5 @@
+[19-Oct-2022 00:09:19 UTC] PHP Fatal error:  Interface 'Requests_Hooker' not found in /home2/greenbin/public_html/wp-includes/Requests/Hooks.php on line 15
+[13-Feb-2023 22:10:52 UTC] PHP Fatal error:  Interface 'Requests_Hooker' not found in /home2/greenbin/public_html/wp-includes/Requests/Hooks.php on line 15
+[14-Feb-2023 03:17:43 UTC] PHP Fatal error:  Interface 'Requests_Hooker' not found in /home2/greenbin/public_html/wp-includes/Requests/Hooks.php on line 15
+[19-May-2023 21:50:37 UTC] PHP Fatal error:  Interface 'Requests_Hooker' not found in /home2/greenbin/public_html/wp-includes/Requests/Hooks.php on line 15
+[05-Jul-2023 00:02:49 UTC] PHP Fatal error:  Interface 'Requests_Hooker' not found in /home2/greenbin/public_html/wp-includes/Requests/Hooks.php on line 15

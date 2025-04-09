@@ -1,0 +1,13 @@
+[14-Feb-2023 04:33:49 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_BLAKE2b' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/BLAKE2b.php on line 4
+[14-Feb-2023 04:34:08 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_ChaCha20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/ChaCha20.php on line 4
+[14-Feb-2023 04:35:51 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Curve25519' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519.php on line 4
+[14-Feb-2023 04:39:39 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Ed25519' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Ed25519.php on line 4
+[14-Feb-2023 04:39:59 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_HChaCha20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/HChaCha20.php on line 4
+[14-Feb-2023 04:40:21 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_HSalsa20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/HSalsa20.php on line 4
+[14-Feb-2023 04:40:41 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Poly1305' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Poly1305.php on line 4
+[14-Feb-2023 04:42:01 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Salsa20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Salsa20.php on line 4
+[14-Feb-2023 04:42:25 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_SipHash' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/SipHash.php on line 4
+[14-Feb-2023 04:42:48 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Util' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Util.php on line 4
+[14-Feb-2023 04:43:08 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_X25519' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/X25519.php on line 4
+[14-Feb-2023 04:43:28 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_XChaCha20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/XChaCha20.php on line 4
+[14-Feb-2023 04:43:49 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_XSalsa20' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Xsalsa20.php on line 4

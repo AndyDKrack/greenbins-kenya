@@ -1,0 +1,2 @@
+[14-Feb-2023 04:36:51 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Curve25519_Fe' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/Fe.php on line 4
+[14-Feb-2023 04:39:18 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Curve25519_H' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/H.php on line 4

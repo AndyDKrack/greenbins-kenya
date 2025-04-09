@@ -1,0 +1,1 @@
+[14-Feb-2023 04:56:49 UTC] PHP Fatal error:  Class 'ParagonIE_Sodium_Core_Util' not found in /home2/greenbin/public_html/wp-includes/sodium_compat/src/Core/Poly1305/State.php on line 10

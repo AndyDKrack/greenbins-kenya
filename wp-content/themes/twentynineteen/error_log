@@ -1,0 +1,8 @@
+[29-Apr-2022 18:52:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/greenbin/public_html/wp-content/themes/twentynineteen/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/greenbin/public_html/wp-content/themes/twentynineteen/index.php on line 17
+[20-Aug-2022 19:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home2/greenbin/public_html/wp-content/themes/twentynineteen/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/greenbin/public_html/wp-content/themes/twentynineteen/index.php on line 17

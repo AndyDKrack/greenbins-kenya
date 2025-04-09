@@ -1,0 +1,12 @@
+[19-Oct-2022 00:06:30 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[19-Oct-2022 00:06:48 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[13-Feb-2023 21:48:22 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[13-Feb-2023 21:49:24 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[14-Feb-2023 02:08:17 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[14-Feb-2023 02:09:13 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[19-May-2023 20:52:59 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[19-May-2023 20:53:21 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[19-May-2023 21:12:20 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[19-May-2023 21:13:08 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[04-Jul-2023 23:58:44 UTC] PHP Fatal error:  Class 'IXR_Client' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[04-Jul-2023 23:58:53 UTC] PHP Fatal error:  Class 'IXR_Server' not found in /home2/greenbin/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
