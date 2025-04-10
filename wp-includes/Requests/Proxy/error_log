@@ -1,6 +1,0 @@
-[19-Oct-2022 00:09:59 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19
-[19-Oct-2022 00:50:44 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19
-[13-Feb-2023 22:13:18 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19
-[14-Feb-2023 03:20:06 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19
-[19-May-2023 21:51:45 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19
-[05-Jul-2023 00:03:14 UTC] PHP Fatal error:  Interface 'Requests_Proxy' not found in /home2/greenbin/public_html/wp-includes/Requests/Proxy/HTTP.php on line 19

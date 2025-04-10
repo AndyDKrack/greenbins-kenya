@@ -1,4 +1,0 @@
-[14-Feb-2023 05:41:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/greenbin/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
-Stack trace:
-#0 {main}
-  thrown in /home2/greenbin/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8

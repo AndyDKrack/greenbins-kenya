@@ -1,4 +1,0 @@
-[19-Oct-2022 00:30:27 UTC] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home2/greenbin/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
-[14-Feb-2023 00:54:45 UTC] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home2/greenbin/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
-[14-Feb-2023 03:26:30 UTC] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home2/greenbin/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
-[19-May-2023 21:54:36 UTC] PHP Fatal error:  Class 'WP_HTTP_Response' not found in /home2/greenbin/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
