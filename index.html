@@ -48,7 +48,7 @@
                                     <a href="tel:+254716019119"><i class="fa fa-phone-alt"></i>+254 716 019 119</a>
                                 </div>
                                 <div class="topbar-col">
-                                    <a href="tel:+254725832458"><i class="fa fa-phone-alt"></i>+254 725 832 458</a>
+                                    <a href="tel:+254725832458"><i class="fa fa-phone-alt"></i>+254 740 027 467</a>
                                 </div>
                                 <div class="topbar-col">
                                     <a href="mailto:info@greenbins.co.ke"><i class="fa fa-envelope"></i>info@greenbins.co.ke</a>
@@ -114,22 +114,72 @@
                         <div class="col-md-5">
                             <div class="form">
                                 <h3>Get A Quote</h3>
-                                <form>
-                                    <input class="form-control" type="text" placeholder="Your Name">
-                                    <input class="form-control" type="text" placeholder="Mobile Number">
+                                <form id="quoteForm" method="POST" action="quote.php" onsubmit="return validateForm()">
+                                    <!-- Hidden field to identify this form -->
+                                    <input type="hidden" name="form_type" value="quote">
+                        
+                                    <input class="form-control" type="text" name="name" placeholder="Your Name" required>
+                                    <input class="form-control" type="text" name="phone" placeholder="Mobile Number" required>
+                                    <input class="form-control" type="email" name="email" placeholder="Email" required>
+                        
                                     <div class="control-group">
-                                        <select class="custom-select">
-                                            <option selected>Choose a service</option>
-                                            <option value="1">House Cleaning</option>
-                                            <option value="2">Apartment Cleaning</option>
-                                            <option value="3">Office Cleaning</option>
+                                        <select class="custom-select" name="service" required>
+                                            <option value="" disabled selected>Choose a service</option>
+                                            <option value="Garbage Collection - Commercial / Business Premises">Garbage Collection - Commercial / Business Premises</option>
+                                            <option value="Garbage Collection - Hotel / Restaurant / Entertainment Spot">Garbage Collection - Hotel / Restaurant / Entertainment Spot</option>
+                                            <option value="Garbage Collection - Homes / Apartments">Garbage Collection - Homes / Apartments</option>
+                                            <option value="Garbage Collection - Hospital / Helthcare Facility">Garbage Collection - Hospital / Healthcare Facility</option>
+                                            <option value="Garbage Collection - Supermarket / Mall">Garbage Collection - Supermarket / Mall</option>
+                                            <option value="Garbage Collection - Open air market">Garbage Collection - Open air market</option>
+                                            <option value="Fumigation - Homes">Fumigation - Homes</option>
+                                            <option value="Fumigation - Office(s)">Fumigation - Office(s)</option>
+                                            <option value="Fumigation - School / Learning Institutions">Fumigation - School / Learning Institutions</option>
+                                            <option value="Fumigation - Hospital / Healthcare Facility">Fumigation - Hospital / Healthcare Facility</option>
+                                            <option value="Fumigation - Hotel / Restaurant">Fumigation - Hotel / Restaurant</option>
+                                            <option value="Fumigation - Factory">Fumigation - Factory</option>
+                                            <option value="Fumigation - Other">Fumigation - Other</option>
+                                            <option value="Cleaning - Carpet">Cleaning - Carpet</option>
+                                            <option value="Cleaning - Terrazo">Cleaning - Terrazo</option>
+                                            <option value="Cleaning - Tile Floor">Cleaning - Tile Floor</option>
+                                            <option value="Cleaning - Walls">Cleaning - Walls</option>
+                                            <option value="Cleaning - Upholstery & Sofa set">Cleaning - Upholstery & Sofa set</option>
+                                            <option value="Lawn & Bush Clearing - Lawn Mowing & Trimming">Lawn & Bush Clearing - Lawn Mowing & Trimming</option>
+                                            <option value="Lawn & Bush Clearing - Bush & Shrub Clearing">Lawn & Bush Clearing - Bush & Shrub Clearing</option>
+                                            <option value="Lawn & Bush Clearing - Land Preparation">Lawn & Bush Clearing - Land Preparation</option>
+                                            <option value="Lawn & Bush Clearing - Weed Control">Lawn & Bush Clearing - Weed Control</option>
+                                            <option value="Sanitary Disposal - Provision of Sanitary Bins">Sanitary Disposal - Provision of Sanitary Bins</option>
+                                            <option value="Sanitary Disposal - Sanitary Disposal">Sanitary Disposal - Sanitary Disposal</option>
+                                            <option value="Sanitary Disposal - Cleaning / Replacement of Sanitary Bins">Sanitary Disposal - Cleaning / Replacement of Sanitary Bins</option>
+                                            <option value="Relocation/Moving - Office Relocation">Relocation/Moving - Office Relocation</option>
+                                            <option value="Relocation/Moving - Retail Shop Relocation">Relocation/Moving - Retail Shop Relocation</option>
+                                            <option value="Relocation/Moving - Packing & Unpacking">Relocation/Moving - Packing & Unpacking</option>
+                                            <option value="Relocation/Moving - Item(s) Transportation">Relocation/Moving - Item(s) Transportation</option>
+                                            <option value="Construction Site - Debri, Rubble, Dust & Surface Clean-up">Construction Site - Debri, Rubble, Dust & Surface Clean-up</option>
+                                            <option value="Construction Site - Waste Segregation & Disposal">Construction Site - Waste Segregation & Disposal</option>
+                                            <option value="Construction Site - Interior Clean-up">Construction Site - Interior Clean-up</option>
+                                            <option value="Construction Site - Exterior Clean-up">Construction Site - Exterior Clean-up</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
-                                    <textarea class="form-control" placeholder="Comment"></textarea>
-                                    <button class="btn btn-block">Get A Quote</button>
+                        
+                                    <textarea class="form-control" name="comment" placeholder="Comment or Descriptions (optional)"></textarea>
+                                    <button class="btn btn-block" type="submit">Get A Quote</button>
                                 </form>
                             </div>
                         </div>
+                        
+                        
+                        <!-- Success popup -->
+                        <script>
+                        function validateForm() {
+                            // Allow form to submit and handle popup after response
+                            return true;
+                        }
+                        
+                        if (window.location.href.indexOf("success=true") > -1) {
+                            alert("Your quote request has been received successfully. You will be contacted soon.");
+                        }
+                        </script>
                         <!-- Form Ends -->
 
 
@@ -340,7 +390,7 @@
 
 
             <!-- Testimonial Start -->
-            <div class="testimonial">
+            <div class="testimonial" id="testimony">
                 <div class="container">
                     <div class="section-header">
                         <!-- <p>Client Review</p> -->
@@ -399,6 +449,76 @@
                 </div>
             </div>
             <!-- Testimonial End -->
+
+
+            <!-- Clients Start -->
+            <div class="testimonial" id="clients">
+                <div class="container">
+                    <div class="section-header">
+                        <!-- <p>Client Review</p> -->
+                        <h2>Our Clients</h2>
+                    </div>
+                    <div class="owl-carousel testimonials-carousel center-stand">
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 1</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 2</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 3</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 4</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 5</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 6</h3> 
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/android-chrome-512x512.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <h3>Customer Name 7</h3> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Clients End -->
             
             
             <!-- Call to Action Start -->
@@ -406,11 +526,11 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-9">
-                            <h2>Get in touch For Cleaning Service</h2>
+                            <h2>Get in touch For Service</h2>
                             
                         </div>
                         <div class="col-md-3">
-                            <a class="btn" href="https://htmlcodex.com/contact">Contact Us</a>
+                            <a class="btn" href="contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -430,7 +550,7 @@
                                     Kenyatta Avenue
                                     Mumias Road Next to Franka Hotel opp Flora Gymn</p>
                                 <p><i class="fa fa-phone-alt"></i>+254 716 019 119</p>
-                                <p><i class="fa fa-phone-alt"></i>+254 725 832 458</p>
+                                <p><i class="fa fa-phone-alt"></i>+254 740 027 467</p>
                                 <p><i class="fa fa-envelope"></i>info@greenbins.co.ke</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -445,18 +565,16 @@
                             <div class="footer-link">
                                 <h2>Useful Link</h2>
                                 <a href="about.html">About Us</a>
-                                <a href="service.html">Our Services</a>
-                                <a href="contact.html">Contact Us</a>
+                                <a href="service.html#service-list">Our Services</a>
+                                <a href="contact.html#contact-us">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Other Link</h2>
-                                <a href="">Our Clients</a>
-                                <a href="">Clients Review</a>
-                                <a href="">Ongoing Project</a>
-                                <a href="">Customer Support</a>
-                                <a href="">FAQs</a>
+                                <a href="index.html#clients">Our Clients</a>
+                                <a href="index.html#testimony">Clients Review</a>
+                                <a href="contact.html#faq">FAQs</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
