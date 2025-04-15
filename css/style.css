@@ -75,13 +75,13 @@ a:focus {
 .header {
     position: relative;
     width: 100%;
-    padding: 15px 0 0 0;
+    padding: 15px 0px 0 0;
     background: #036c03;
 }
 
 .header.home {
     margin-bottom: 45px;
-    background: linear-gradient(rgb(3, 107, 15), rgba(3, 107, 15, 0.858), rgba(3, 107, 15)), url(../img/header.jpg);
+    background: linear-gradient(rgb(3, 107, 15), rgba(3, 107, 15, 0.858), rgba(3, 107, 15)), url(../img/header2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +95,7 @@ a:focus {
 
 .header .header-top {
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 0px solid rgba(255, 255, 255, .1);
 }
 
 .header .brand {
@@ -110,9 +110,9 @@ a:focus {
 
 .header .brand img {
     width: 100%;
-    max-width: 230px;
+    max-width: 330px;
     height: 100%;
-    max-height: 180px;
+    max-height: 280px;
 }
 
 .header .topbar {
@@ -120,8 +120,17 @@ a:focus {
     text-align: right;
 }
 
+.contact-top {
+    text-align: right;
+    justify-content: right;
+    align-items: flex-end;
+
+}
+
 .header .topbar .topbar-col {
     display: inline-block;
+    justify-content: right;
+    align-items: flex-end;
     padding: 0 15px;
     margin-bottom: 15px;
 }
@@ -263,13 +272,24 @@ a:focus {
 .header .hero {
     padding-top: 60px;
     padding-bottom: 60px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../img/header2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-p {
+    background: rgba(2, 117, 10, 0.467);
+    padding: 80px 30px;
+    border-radius: 5px;
 }
 
 .header .hero h2 {
     margin: 0;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 100;
-    color: #ffffff;
+    color: #ffffff; 
+    font-weight: bold;
 }
 
 .header .hero h2 span {
@@ -280,6 +300,7 @@ a:focus {
     margin: 10px 0 20px 0;
     font-size: 22px;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .header .hero a.btn {
@@ -300,15 +321,16 @@ a:focus {
 }
 
 .header .hero .form {
-    padding: 30px;
+    padding:11px 30px;
     border: 1px solid rgba(255, 255, 255, .4);
-    background: rgba(255, 255, 255, .3);
+    background: rgba(2, 117, 10, 0.633);
     border-radius: 5px;
 }
 
 .header .hero .form h3 {
     color: #ffffff;
-    font-weight: 300;
+    font-weight: bold;
+    background: rgba(2, 117, 10, 0);
 }
 
 .header .hero .form input,
@@ -317,8 +339,8 @@ a:focus {
     margin-bottom: 15px;
     height: 45px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, .3);
-    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(64, 64, 64, 0.736);
+    background: rgba(20, 30, 21, 0.956);
 }
 
 .header .hero .form textarea {
