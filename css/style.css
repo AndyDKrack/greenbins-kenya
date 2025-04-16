@@ -76,12 +76,19 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 15px 0px 0 0;
-    background: #025602;
+    background: #036c03;
 }
 
 .header.home {
     margin-bottom: 45px;
-    background: linear-gradient(rgb(3, 107, 15), rgba(3, 107, 15, 0.858), rgba(3, 107, 15)), url(../img/header3.jpg);
+   /* background: linear-gradient(rgb(3, 107, 15), rgba(3, 107, 15, 0.858), rgba(3, 107, 15)), url(../img/header3.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header.header.home {
+    background:  url(../img/header3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -323,7 +330,7 @@ a:focus {
 .header .hero .form {
     padding:11px 30px;
     border: 0px solid rgba(255, 255, 255, .4);
-    background: rgba(2, 117, 10, 0);
+    background: rgba(48, 48, 48, 0);
     border-radius: 5px;
 }
 
@@ -1756,7 +1763,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #036c03;
+    background: rgba(20, 30, 21, 0.956);
     color: #ffffff;
     font-weight: 300;
 }
