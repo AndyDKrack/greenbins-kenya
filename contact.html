@@ -8,6 +8,16 @@
         " name="keywords">
         <meta content="Get in touch with Green Bins Randago Enterprises for reliable waste collection, cleaning, fumigation, and moving services across Kenya." name="description">
 
+        <!-- General metadata -->
+        <meta name="description" content="Download our official Garbage Collection Agreement Form directly from the navbar." />
+        <meta name="keywords" content="Garbage collection agreement form, PDF, download, document" />
+        <meta name="author" content="Green Bins Randago Enterprises" />
+
+        <!-- Social sharing (optional) -->
+        <meta property="og:title" content="Garbage Collection Agreement Form Download" />
+        <meta property="og:description" content="Click to download our garbage collection agreement form now." />
+        <meta property="og:url" content="https://greenbins.co.ke/assets/AgreementForm.pdf" />
+
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
         <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -23,6 +33,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/popup.css" />
 
         <!-- Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
@@ -76,11 +88,23 @@
 
 
                                         <a href="index.html" class="btn">Get A Quote</a>
+
+                                        <a onclick="downloadFile()" href="assets/AgreementForm.pdf" target="_blank" class="btn">Agreement Form</a>
+                                        <!-- Popup -->
+                                        <!--
+                                        <div id="popup" class="popup">
+                                            Your agreement form is being downloaded.<br>Thank you!
+                                        </div>
+                                        -->
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="" style="align-items: flex-end !important;"> 
                         <div class="topbar" >
                             <div class="topbar-col">
@@ -343,5 +367,7 @@
 
         <!-- Site Javascript -->
         <script src="js/main.js"></script>
+        
+        <script src="js/popup.js"></script>
     </body>
 </html>
