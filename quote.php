@@ -13,15 +13,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone   = htmlspecialchars($_POST['phone']);
     $email   = htmlspecialchars($_POST['email']);
     $service = htmlspecialchars($_POST['service']);
+    $county  = htmlspecialchars($_POST['county']);
     $comment = htmlspecialchars($_POST['comment']);
 
     // Save to quotes.csv (append mode)
     $csvFile = fopen("quotes.csv", "a");
     if (filesize("quotes.csv") == 0) {
         // Write headers only if the file is empty
-        fputcsv($csvFile, ['Timestamp', 'Name', 'Phone', 'Email', 'Service', 'Comment']);
+        fputcsv($csvFile, ['Timestamp', 'Name', 'Phone', 'Email', 'Service', 'county', 'Comment']);
     }
-    fputcsv($csvFile, [date("Y-m-d H:i:s"), $name, $phone, $email, $service, $comment]);
+    fputcsv($csvFile, [date("Y-m-d H:i:s"), $name, $phone, $email, $service, $county, $comment]);
     fclose($csvFile);
 
     // Send email to admin and user using PHPMailer
@@ -43,12 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Admin message body
         $mail->isHTML(true);
-        $mail->Subject = "New Quote Request from $name";
+        $mail->Subject = "New Quote Request from $name of $county County";
         $mail->Body    = "
             <strong>Name:</strong> $name<br>
             <strong>Phone:</strong> $phone<br>
             <strong>Email:</strong> $email<br>
             <strong>Service:</strong> $service<br>
+            <strong>County:</strong> $county<br>
             <strong>Comment:</strong> $comment
         ";
         $mail->send();
