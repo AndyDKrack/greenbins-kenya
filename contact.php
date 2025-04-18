@@ -30,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.greenbins.co.ke';        // Replace with your SMTP host
+        $mail->Host       = 'da12.host-ww.net';       
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'enquiry@greenbins.co.ke';    // Your SMTP username
-        $mail->Password   = 'Nyamwakaf@o1';              // Your SMTP password
+        $mail->Username   = 'enquiry@greenbins.co.ke';    
+        $mail->Password   = 'Nyamwakaf@o1';              
         $mail->SMTPSecure = 'tls';                        // Use 'tls' or 'ssl' as supported
         $mail->Port       = 587;                          // Use 465 for 'ssl'
 

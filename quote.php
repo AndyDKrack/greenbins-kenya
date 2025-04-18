@@ -30,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.greenbins.co.ke';         // e.g., smtp.zoho.com, smtp.gmail.com
+        $mail->Host       = 'da12.host-ww.net';         
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'quotes@greenbins.co.ke';    // Your email address
-        $mail->Password   = 'Nyamwakaf@o1';             // Your email password or app password
+        $mail->Username   = 'quotes@greenbins.co.ke';    
+        $mail->Password   = 'Nyamwakaf@o1';             
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;                         // Usually 587 for TLS
 
